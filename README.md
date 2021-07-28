@@ -1,4 +1,5 @@
 ## Ionio Tasks
+### Live Preview: https://ionio-tasks.vercel.app/
 #### Task 1: 
 * Implement an input that accepts a string and iterates a card for each letter entered.(Every letter typed should create a new card) .
 * The card should contain an image & every third card should be highlighted with a different color
@@ -7,7 +8,7 @@
 * Implement dynamic text colors, the text colors should change depending on the contents of the image
 * A YouTube video should be embedded at the bottom right corner of the screen
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
