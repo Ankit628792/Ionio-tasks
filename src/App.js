@@ -15,6 +15,9 @@ function App() {
       <Route exact path="/task2">
         <Task2 />
       </Route>
+    <Route>
+        <h1>Page Doesn't Exist</h1>
+      </Route>
     </Switch>
   );
 }
