@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Card from './Card';
-var i = 0
+
 const newArray = []
 function CardBox() {
 
