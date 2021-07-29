@@ -26,11 +26,8 @@
     transform: translate(-50%,-50%);
     height: 10rem;
     font-size: 1.6rem;
-    color: #FFFFFF;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     font-weight: 500;
     user-select: none;
-    /* mix-blend-mode: color-dodge; */
     background: rgba(51, 51, 51, 0.2);
     padding: 1rem;
     max-height: 8rem;

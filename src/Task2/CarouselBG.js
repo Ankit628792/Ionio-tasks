@@ -1,8 +1,12 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Slide from './Slide';
 
 function CarouselBG() {
+    const numList = [0,1,2,3];
+    const type = ['olympic', 'technology', 'city', 'spirituality']
+    const lorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas quam, cum eligendi beatae cumque.`
     return (
         <>
             <Carousel
@@ -14,24 +18,11 @@ function CarouselBG() {
                 showIndicators={true}
                 showStatus={false}
             >
-                <div>
-                    <img src="https://source.unsplash.com/1600x900/?nature" alt=" " />
-                    <p className="content line-clamp-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui eos laborum consectetur, porro earum debitis. Quod hic dolor quo.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://source.unsplash.com/1600x1000/?sports" alt=" " />
-                    <p className="content line-clamp-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui eos laborum consectetur, porro earum debitis. Quod hic dolor quo.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://source.unsplash.com/1600x800/?city" alt=" " />
-                    <p className="content line-clamp-3">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui eos laborum consectetur, porro earum debitis. Quod hic dolor quo.
-                    </p>
-                </div>
+                {
+                    numList.map((_, i) => (
+                        <Slide key={i} imgSrc={`https://source.unsplash.com/1600x900?${type[i]}`} text={lorem} />
+                    ))
+                }
             </Carousel>
 
         </>
