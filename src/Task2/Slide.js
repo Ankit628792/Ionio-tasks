@@ -4,7 +4,7 @@ import chroma from 'chroma-js'
 
 function Slide({ imgSrc, text }) {
     const [colors, setColors] = useState();
-    const [textColor, setTextColor] = useState()
+    const [textColor, setTextColor] = useState(`rgba(255,255,255,1)`);
 
     const getImageColors = (color) => {
         setColors({ ...colors, color })
