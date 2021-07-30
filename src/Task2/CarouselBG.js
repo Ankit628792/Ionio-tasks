@@ -6,7 +6,7 @@ import Slide from './Slide';
 function CarouselBG() {
     const numList = [0,1,2,3];
     const type = ['olympic', 'experimental', 'city', 'spirituality']
-    const lorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas quam, cum eligendi .`
+    const lorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptas quam, cum eligendi `
     return (
         <>
             <Carousel

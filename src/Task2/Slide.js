@@ -10,7 +10,6 @@ function Slide({ imgSrc, text }) {
         setColors({ ...colors, color })
         const rgbaData = chroma.average(color).rgba();
         setTextColor(`rgba(${rgbaData[0] < 150 ? rgbaData[0] + 100 : rgbaData[0] - 150},${rgbaData[1] < 150 ? rgbaData[1] + 150 : rgbaData[1] - 150},${rgbaData[2] < 150 ? rgbaData[2] + 100 : rgbaData[2] - 100},${rgbaData[3]})`);
-
     }
 
     return (
