@@ -11,7 +11,7 @@ function CardBox() {
         if (e.nativeEvent.inputType === 'deleteContentBackward') {
             setData(newArray.pop())
         }
-        else if (e.nativeEvent.data !== ' ') {
+        else if(e.nativeEvent.data !== ' ') {
             setData(newArray.push(e.nativeEvent.data))
         }
     }
@@ -25,7 +25,7 @@ function CardBox() {
                     newArray && newArray.length > 0
                         ?
                         newArray.map((char, i) => (
-                            <Card letter={char} key={i} bg={(i + 1) % 3 === 0 && i > 1 ? 'rgb(100 208 255)' : 'rgba(255, 255, 255, 0.6)'} />
+                            <Card letter={char} key={i} bg={(i + 1) % 3 === 0 ? 'rgba(100, 208, 255, 0.75)' : 'rgba(255, 255, 255, 0.6)'} />
                         ))
                         :
                         <h1>Type something to generate cards</h1>
