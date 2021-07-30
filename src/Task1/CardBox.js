@@ -25,7 +25,8 @@ function CardBox() {
                     newArray && newArray.length > 0
                         ?
                         newArray.map((char, i) => (
-                            <Card letter={char} key={i} bg={(i + 1) % 3 === 0 ? 'rgba(100, 208, 255, 0.75)' : 'rgba(255, 255, 255, 0.6)'} />
+                            <span>{char}</span>
+                            // <Card letter={char} key={i} bg={(i + 1) % 3 === 0 ? 'rgba(100, 208, 255, 0.8)' : 'rgba(255, 255, 255, 0.6)'} />
                         ))
                         :
                         <h1>Type something to generate cards</h1>
