@@ -151,7 +151,7 @@
       position: fixed;
       height: 100vh;
       transform: translateX(-12rem);
-      padding: 1.5rem 0;
+      padding: 1rem 0;
       padding-bottom: 3rem;
       transition: all 0.2s;
     }
