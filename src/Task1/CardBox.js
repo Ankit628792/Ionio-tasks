@@ -2,19 +2,23 @@ import React, { useState } from 'react'
 import Card from './Card';
 
 const newArray = []
+
 function CardBox() {
 
-    const [data, setData] = useState();
+    const [characters, setCharacters] = useState();
 
     const handleChange = (e) => {
         e.preventDefault();
         if (e.nativeEvent.inputType === 'deleteContentBackward') {
-            setData(newArray.pop())
+            newArray.pop()
+            setCharacters([...newArray])
         }
         else if (e.nativeEvent.data !== ' ') {
-            setData(newArray.push(e.nativeEvent.data))
+            newArray.push(e.nativeEvent.data)
+            setCharacters([...newArray])
         }
     }
+
     return (
         <div className="card__box">
             <div className="input__box">
@@ -22,9 +26,9 @@ function CardBox() {
             </div>
             <div className="card__area">
                 {
-                    newArray && newArray.length > 0
+                    characters && characters.length > 0
                         ?
-                        newArray.map((char, i) => (
+                        characters.map((char, i) => (
                             <Card letter={char} key={i} bg={(i + 1) % 3 === 0 ? 'rgba(100, 208, 255, 0.8)' : 'rgba(255, 255, 255, 0.6)'} />
                         ))
                         :
